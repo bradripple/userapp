@@ -1,0 +1,18 @@
+<% for (let i = 0; i < users.length; i++) {%> 
+    <% let u = users[i]; %>
+    <!-- card 1 -->
+    <div class="card">
+        <div class="face face1">
+            <div class="content">
+                <h2><%= u.firstName %> </h2>
+                <p>Email: <%= u.email %> </p>
+                <p>Age: <%= u.age %> </p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+        <div class="face face2">
+            <h2><%= u.id %> </h2>
+        </div>
+    </div>
+    
+<% } %>     
